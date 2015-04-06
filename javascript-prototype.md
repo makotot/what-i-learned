@@ -30,3 +30,39 @@ var saburo = Person('saburo');
 console.log(saburo);
 // => undefined
 ```
+
+コンストラクタ関数の中でメソッドを作成することができるけど、メモリ効率を考慮するとコンストラクタの`prototype`オブジェクトでメソッドを作成するのがいい。  
+コンストラクタ関数の中でメソッドを作成した場合、インスタンスを生成するたびにコピーが生成され、メモリを確保する。  
+コンストラクタの`prototype`オブジェクトにメソッドを作れば、生成されたインスタンスはコンストラクタのprototypeを参照する。  
+コンストラクタの引数に応じて中身が変わるようなものでなければ、`prototype`に持たせるべき。
+
+```js
+function DogA (name) {
+  this.name = name;
+
+  this.say = function () {
+    console.log('wan');
+  };
+}
+
+var dogA = new DogA('pochi');
+
+dogA.say();
+
+console.log(dogA);
+
+
+function DogB (name) {
+  this.name = name;
+}
+
+DogB.prototype.say = function () {
+  console.log('wanwan');
+};
+
+var dogB = new DogB('kuro');
+
+dogB.say();
+
+console.log(dogB);
+```
