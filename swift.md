@@ -20,3 +20,16 @@ OSX用アプリケーションを構築するためのAPI。
 
 - OS機能などサービス層 -> Foundation
 - GUIパーツの集合 -> AppKit
+
+
+---
+
+## Syntax
+
+### @IBOutlet, @IBAction
+
+storyboardから認識されるようになる。
+
+- [swiftでIBOutlet, IBAction - Qiita](http://qiita.com/jazzsasori/items/6053e1467772b7ff9783)
+- [IBOutletとIBAction：関連付けでラクラクパーツを配置しよう | iPhoneアプリ開発大百科](http://iphone-app-program.com/newapp/iboutlet-and-ibaction/ibbas/)
+
