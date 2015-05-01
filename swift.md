@@ -28,6 +28,23 @@ OSX用アプリケーションを構築するためのAPI。
 - GUIパーツの集合 -> AppKit
 
 
+### API
+
+#### NSWindow
+
+- [NSWindowクラス - Cocoa API解説(iOS/OS X)](http://cocoaapi.hatenablog.com/entry/Appkit/NSWindow_class)
+
+
+#### NSTask
+
+コマンド実行。
+
+- [こたつつきみかん » NSTaskでコマンドを実行](http://www.lifeaether.com/overtaker/blog/?p=800)
+- [Swift - NSTask経由でscalaスクリプトを実行する (プログラミング学習用アプリを作る) - Qiita](http://qiita.com/tottokotkd/items/fc160722f3f80377ac5c)
+- [NSTaskクラス - Cocoa API解説(iOS/OS X)](http://cocoaapi.hatenablog.com/entry/10010723/NSTask)
+
+
+
 ---
 
 ## Structure
@@ -88,6 +105,19 @@ Viewの管理？
 - [Swiftの変数と型について | イリテク](http://iritec.jp/objective-c/9105/)
 
 
+### オプショナル型
+
+変数宣言時、型の直後に`?`をつける。
+
+```swift
+var hoge: String?
+```
+
+- [オプショナル型 | Swift言語を学ぶ](http://tea-leaves.jp/swift/content/%E3%82%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%8A%E3%83%AB%E5%9E%8B)
+- [Swiftことはじめ：String?のクエスチョンマークって何？ - shoma2da's diary](http://shoma2da.hatenablog.com/entry/2014/06/03/233312)
+
+
+
 ### 関数
 
 ```swift
@@ -117,6 +147,12 @@ class Foo {
 - [Swift クラス(Class) 初期化(イニシャライザ) 破棄(デイニシャライザ) - Codable Tech Blog ](http://blog.codable.co.jp/entry/2014/11/04/171935)
 
 
+### セミコロン
+
+文末にセミコロンは不要。つけてもいい。
+
+- [The Swift Programming Language: The Basics](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-ID316)
+
 
 ### @IBOutlet, @IBAction
 
@@ -142,6 +178,11 @@ storyboardから認識されるようになる。
 
 
 
+### Access Controll
+
+- [[iOS 8][Swift] アクセス修飾子を理解する ｜ Developers.IO](http://dev.classmethod.jp/references/ios8-swift-access-control/)
+
+
 ---
 
 ## Event
@@ -165,6 +206,31 @@ storyboardから認識されるようになる。
 
 ---
 
+## Debug
+
+### println
+
+```swift
+println(__COLUMN__, __LINE__)
+```
+
+以下のような特殊リテラルがある。
+
+- `__LINE__` : 出力元の行番号
+- `__COLUMN__` : 出力元の列番号
+- `__FUNCTION__` : 出力元の関数
+- `__FILE__` : 出力元のファイルパス
+
+
+- [	Swift Debugging Tips	](http://natashatherobot.com/swift-debugging/)
+- [Debugging Swift App in Xcode – Ramblings on Swift](http://rshankar.com/debugging-swift-app-in-xcode/)
+- [Swiftでデバッグ出力（日時、メソッド名、行番号） - 定食屋おろポン](http://oropon.hatenablog.com/entry/2014/06/05/030620)
+- [JavaScriptプログラマがSwift iOSアプリを２週間で作って公開してみた〜その23 Xcode Debug〜 | TEJI TECH BLOG](http://www.tejitak.com/blog/?p=1333)
+- [List of implicitly defined variables in Swift | practicalswift.com](http://practicalswift.com/2014/06/10/list-of-implicitly-defined-variables-in-swift/)
+
+
+---
+
 ## Links
 
 
@@ -178,6 +244,7 @@ storyboardから認識されるようになる。
 
 ### Guide
 
+- [The Swift Programming Language: The Basics](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html)
 - [Swift (プログラミング言語) - Wikipedia](http://ja.wikipedia.org/wiki/Swift_(%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E8%A8%80%E8%AA%9E))
 - [Ultimate Guide to Learning Swift in One Day](https://www.airpair.com/swift/complete-guide-to-swift)
 
@@ -194,6 +261,8 @@ storyboardから認識されるようになる。
 - [Swift - ステータスバーに常駐するアプリケーション - Qiita](http://qiita.com/arthur87/items/1998541004853d171088)
 - [How I used Swift to build a Menubar App for OSX - John Mullins](http://www.johnmullins.co/blog/2014/08/08/menubar-app/)
 - [yene/Simple-Duration](https://github.com/yene/Simple-Duration)
+- [ericrallen/Simple-Timer](https://github.com/ericrallen/Simple-Timer)
+- [dtinth/MyStatusItem](https://github.com/dtinth/MyStatusItem)
 
 
 
