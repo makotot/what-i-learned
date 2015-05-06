@@ -51,6 +51,18 @@ OSX用アプリケーションを構築するためのAPI。
 - [-sharedApplication - Cocoa API解説(iOS/OS X)](http://cocoaapi.hatenablog.com/entry/NSApplication/sharedApplication)
 
 
+##### terminate
+
+アプリケーションを終了する。
+
+```swift
+NSApplication.sharedApplication().terminate(self)
+```
+
+- [terminate: - Cocoa API解説(iOS/OS X)](http://cocoaapi.hatenablog.com/entry/NSApplication/terminate_)
+
+
+
 ---
 
 ## Structure
