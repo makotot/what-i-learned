@@ -44,6 +44,12 @@ OSX用アプリケーションを構築するためのAPI。
 - [NSTaskクラス - Cocoa API解説(iOS/OS X)](http://cocoaapi.hatenablog.com/entry/10010723/NSTask)
 
 
+#### sharedApplication
+
+共有アプリケーションを返す。
+
+- [-sharedApplication - Cocoa API解説(iOS/OS X)](http://cocoaapi.hatenablog.com/entry/NSApplication/sharedApplication)
+
 
 ---
 
