@@ -267,6 +267,11 @@ println(__COLUMN__, __LINE__)
 - [Ultimate Guide to Learning Swift in One Day](https://www.airpair.com/swift/complete-guide-to-swift)
 
 
+### Cheatsheet
+
+- [iwasrobbed/Swift-CheatSheet](https://github.com/iwasrobbed/Swift-CheatSheet)
+
+
 ### Tutorial
 
 - [Free Swift video tutorials on iOS and Mac development | Swift Video Tutorials](http://www.swiftvideotutorials.com/)
