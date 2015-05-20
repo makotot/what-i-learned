@@ -1,5 +1,10 @@
 # [React](https://facebook.github.io/react/)
 
+> A JAVASCRIPT LIBRARY FOR BUILDING USER INTERFACES
+
+UIを構築するためのJavaScriptライブラリ
+
+
 > JUST THE UI
 
 MVCフレームワークとは違って、MVCのVの部分、UIコンポーネントをつくるライブラリ。
