@@ -39,4 +39,20 @@ Electronにおけるウェブページはそれぞれ固有のprocessで実行�
 Electronにおいては、ウェブページ上でio.jsのAPI使うことで低レベルのOSとの対話を可能にしている。
 
 
+## electron-packager
 
+OSで実行可能なアプリケーションにするには、[`electron-packager`](https://github.com/maxogden/electron-packager)を使う。
+
+```sh
+$ npm i --save-dev electron-packager
+
+or
+
+$ npm i -g electron-packager
+```
+
+
+
+## Links
+
+- [electron/docs at master · atom/electron](https://github.com/atom/electron/tree/master/docs)
