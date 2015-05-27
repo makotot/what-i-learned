@@ -19,4 +19,4 @@ build/*
 
 ## Links
 
-- [](http://chaika.hatenablog.com/entry/2014/10/10/011624)
+- [Git 空ディレクトリだけgitで管理したい。 - かもメモ](http://chaika.hatenablog.com/entry/2014/10/10/011624)
